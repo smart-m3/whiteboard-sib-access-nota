@@ -1,0 +1,259 @@
+2007-09-30  Jukka Alasalmi <jukka.alasalmi@nokia.com>
+  * Tagged (probably) last Osso 1.0 version
+
+2007-09-04  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Fixed compiler warnings
+
+2007-08-30  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Changed mediahub_metadata to use MediaHubCmd.
+
+2007-08-28  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Removed custom command testing stuff
+
+2007-08-28  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Implemented simple custom command handler for testing purposes
+
+2007-08-21  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Added content update signalling to sources.
+  * Added some custom command drafts, nothing tangible yet, though.
+
+2007-08-10  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Removed some forgotten fprintfs.
+
+2007-08-10  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Implemented the new metadata scheme for MediaHubUI as well.
+
+2007-08-09  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Implemented a more dynamic way of getting metadata.
+    MediaHubUI is not yet supporting it, though...
+  * Moved MediaHubMediaClass and MediaHubPlayState enums from
+    mediahub_util.h to mediahub_metadata.h
+
+2007-06-21  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Fixed control channel GLib signals
+  * Added macros for GLib signal names
+
+2007-06-21  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * GObjectized MediaHubSource component.
+
+2007-06-15  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Week 24 release.
+
+2007-06-13  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Removed some not needed library dependencies.
+
+2007-06-06  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Week 23 release.
+
+2007-05-30  Visa Smolander <visa.smolander@nokia.com>
+  * Release 0.6.0
+
+2007-05-30  Visa Smolander <visa.smolander@nokia.com>
+  * Fixed bug #1246: Fixed parse fail handling. Now it doesn't 
+    go into infinite loop. Also, now it tries to identify the 
+    failing items and skip only them
+
+2007-05-29  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Changed the whole thing from MCD* to MediaHub*
+
+2007-05-25  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Added forgotten debian/mcdupnpsource.install
+
+2007-05-25  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Migrated vostok* to mcd*
+
+2007-05-23  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Updated version numbers.
+
+2007-05-23  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Shutdown handler for common restart case. (See bug #1226)
+
+2007-05-23  Visa Smolander <visa.smolander@nokia.com>
+  * Fixed bug 1231: Modified browse thread loop end condition to take into 
+    account that some servers respond with wrong start indices. This caused 
+    an infinite browse loop...
+
+2007-05-21  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Updated version numbers.
+
+2007-05-21  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Disabled "Device updated" debug print flooding and fixed its missing param
+
+2007-05-16  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Changed metadata get/send to asynchronous mode
+
+2007-05-15  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Changed naming class -> media_class for c++ compiler compatibility.
+
+2007-05-11  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Changed dbus_g_thread_init call to be called before any dbus
+    api calls.
+
+2007-05-10  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Added thread initialization call for dbus.
+
+2007-05-10  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Implemented a ref & unref scheme to MCDSourceHandle
+
+2007-05-10  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Changed GMainLoop in MCDSource to GMainContext
+  * Removed mcdsource_start() and _stop()
+  * Removed mcdsource_set_mainloop()
+  * Renamed mcdsource_get_mainloop() to mcdsource_get_main_context()
+
+2007-05-09  Visa Smolander <visa.smolander@nokia.com>
+  * Fixed a minor copy-paste error in icdmonitor support
+
+2007-05-09  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Updated release numbers and debian changelog
+
+2007-05-08  Visa Smolander <visa.smolander@nokia.com>
+  * Added support to icdmonitor. Now network disconnect/connect are
+    detected & handled
+  * Removed service_lock from controlpoint stop to avoid a deadlock
+    and added some cp_running-assertions to functions which use UPnP. 
+    Let's see what happens...
+
+2007-05-08  Visa Smolander <visa.smolander@nokia.com>
+  * Added root browsing "uuid::" support.
+
+2007-05-04  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Removed browse_ext_metadata
+  * Added DIDL-Lite to metadata calls.
+
+2007-05-04  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Rewrote upnpserver_ref & unref to prevent LGPL violation
+
+2007-05-03  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Fixed trivial copy&paste error from udn check routine. 
+
+2007-05-03  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Debian changelog and configure.ac updated based on last release.
+
+2007-05-02  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Improved UNIX signal handler.
+  * Changed upnpserver_compare_udn to take also root udn into account.
+
+2007-05-02  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Improved mainloop ref/unreffing
+  * Source sends unregistered signal to common when CTRL-C is pressed.
+
+2007-04-30  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Fixed device cache cleanup routine.
+  * Removed unnecessary mutex unlock.
+
+2007-04-30  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Removed (correct) browse complete signal send because of 
+    broken but essential hack elsewhere.
+
+2007-04-25  Visa Smolander <visa.smolander@nokia.com>
+  * Added root browsing to send browse complete signal
+
+2007-04-25  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Unref changes & signal handler added
+
+2007-04-25  Visa Smolander <visa.smolander@nokia.com>
+  * Fixed browse cancel functionality
+  * Added error log messages
+
+2007-04-24  Visa Smolander <visa.smolander@nokia.com>
+  * Modified all browse_id:s to int (from uint)
+  * Fixed broken browsing
+  * Started browse_cancel implementation
+
+2007-04-24  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * File name changes: vostok_ui.h->mcdui.h vostok_source.h->mcdsource.h
+
+2007-04-17  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Api changes reflected
+
+2007-04-16  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Control channel creation + refresh callback
+
+2007-04-16  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Small fixes and cleanups.
+
+2007-04-12  Visa Smolander <visa.smolander@nokia.com>
+  * Released 0.1.0
+
+2007-04-11  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Enchanced logging in error situations.
+
+2007-04-03  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Moved the registration loop to mcdsource
+
+2007-04-04  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Created a timeout function that attempts to register itself with
+    the MCD until it succeeds.
+
+2007-04-03  Visa Smolander <visa.smolander@nokia.com>
+  * Added browse_complete signal support
+
+2007-04-03  Visa Smolander <visa.smolander@nokia.com>
+  * Fixed discovery problem with SimpleCenter
+  * Changed get_metadata to always return first HTTP uri
+
+2007-04-03  Visa Smolander <visa.smolander@nokia.com>
+  * Updated vostok dependency
+  * Released 0.0.1
+
+2007-03-28  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Changed browse callback to honour requested count parameter.
+
+2007-03-28  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Fixed root container fetching to return only one server at a time.
+
+2007-03-28  Visa Smolander <visa.smolander@nokia.com>
+  * Fixed a memory leak in upnpserver destroy
+
+2007-03-28  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Added a signaling mechanism to send all server roots
+  * Replaced server->udn as the browse & metadata callback's
+    userdata with the service instance.
+
+2007-03-27  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Fixed metadata sending (really)
+
+2007-03-27  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Fixed metadata sending (almost)
+
+2007-03-27  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Executable is now installed into libexec directory.
+    Note: Currently --libexecdir=/usr/lib/mcd/libexec must
+    be given to configure, since this directory is hard coded
+    in mcd.c.
+
+2007-03-26  Visa Smolander <visa.smolander@nokia.com>
+  * Fixed a crash which occured when item title is empty
+  * Modified MCD_DEBUG to configure
+
+2007-03-23  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Send a fixed MCD_Container class with containers. Duh.
+
+2007-03-23  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Debianization
+
+2007-03-23  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Added mimetype & media class to item & metadata senders.
+
+2007-03-22  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Unindent run.
+
+2007-03-21  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Indent run
+
+2007-03-21  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Now uses new logger + new header files. debug.h
+    should be removed at some point.
+
+2007-02-28  Mikael Saarenpaa <ext-mikael.saarenpaa@nokia.com>
+  * Integrated mcdsource lib with upnp source component
+
+2007-02-23  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Conceptual functionality for browsing
+
+2007-02-23  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Conceptual functionality for metadata fetching
+
+2007-02-20  Heikki Junnila <ext-heikki.junnila@nokia.com>
+  * Created project anew

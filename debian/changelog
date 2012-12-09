@@ -1,0 +1,27 @@
+whiteboard-sib-access-nota (0.4) karmic; urgency=low
+
+  * Another beta release.
+
+ -- Hannu Laine <hannu.e.laine@nokia.com>  Thu, 15 Apr 2010 09:07:20 +0300
+
+whiteboard-sib-access-nota (0.3) karmic; urgency=low
+
+  * Still beta-release.
+
+ -- Hannu Laine <hannu.e.laine@nokia.com>  Thu, 25 Feb 2010 14:51:08 +0200
+
+whiteboard-sib-access-nota (0.2) karmic; urgency=low
+
+  * smart-m3-0.9.1-beta release version.
+
+ -- Hannu Laine <hannu.e.laine@nokia.com>  Fri, 16 Oct 2009 15:53:31 +0300
+
+whiteboard-sib-access-nota (0.1) unstable; urgency=low
+
+  * Initial release
+
+ -- Hannu Laine <hannu.e.laine@nokia.com>  Thu,  4 Dec 2008 15:19:06 +0200
+
+Local variables:
+mode: debian-changelog
+End:

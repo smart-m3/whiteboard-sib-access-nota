@@ -1,0 +1,12 @@
+Source: whiteboard-sib-access-nota
+Section: user/Multimedia
+Priority: optional
+Maintainer: Hannu Laine <hannu.e.laine@nokia.com>
+Build-Depends: debhelper (>= 4.0.0), libwhiteboard-dev (= 2.0-beta1), libnota-stubadapter-dev
+Standards-Version: 3.6.0
+
+Package: whiteboard-sib-access-nota
+Architecture: any
+Section: user/Multimedia
+Depends: libwhiteboard (>= 2.0-beta1), whiteboard (= 2.0-beta1), libnota-stubadapter
+Description: Whiteboard SIB access module for NoTA.
